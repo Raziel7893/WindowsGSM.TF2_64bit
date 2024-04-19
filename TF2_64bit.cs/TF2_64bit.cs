@@ -7,7 +7,7 @@ namespace WindowsGSM.Plugins
     public class TF2_64bit : Source
     {
         // - Plugin Details
-        public const string FullName = "Team Fortress 2 64bit Dedicated Server";
+        public string FullName = "Team Fortress 2 64bit Dedicated Server";
         public override string Defaultmap { get { return "cp_badlands"; } }
         public override string Game { get { return "tf"; } }
         public override string AppId { get { return "232250"; } }
