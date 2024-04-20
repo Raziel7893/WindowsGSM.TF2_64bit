@@ -24,9 +24,9 @@ namespace WindowsGSM.Plugins
         public override string AppId { get { return "232250"; } }
         public override string Additional { get { return "-tickrate 64"; } }
 
-        public TF2_64bit(Functions.ServerConfig serverData) : base(serverData)
+        public TF2_64bit(ServerConfig serverData) : base(serverData)
         {
-            if (File.Exists(Functions.ServerPath.GetServersServerFiles(serverData.ServerID, "srcds_win64.exe")))
+            if (File.Exists(ServerPath.GetServersServerFiles(serverData.ServerID, "srcds_win64.exe")))
                 StartPath = "srcds_win64.exe";
             base.serverData = serverData;
         }
