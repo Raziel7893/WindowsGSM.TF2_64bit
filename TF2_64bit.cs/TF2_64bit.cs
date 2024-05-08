@@ -23,6 +23,7 @@ namespace WindowsGSM.Plugins
         public bool AllowsEmbedConsole = true;
         public int PortIncrements = 1;
         public dynamic QueryMethod = new GameServer.Query.A2S();
+        public override bool loginAnonymous => true;
 
         public string FullName = "Team Fortress 2 64bit Dedicated Server";
         public string Defaultmap { get { return "cp_badlands"; } }
