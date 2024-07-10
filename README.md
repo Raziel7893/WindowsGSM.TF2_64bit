@@ -1,4 +1,4 @@
-# TF2 - Not Working dueto ... I don't know why
+# TF2
 🧩 Plugin for WindowsGSM to run a dedicated server for Black Mesa
 
 ## PLEASE ⭐STAR⭐ THE REPO IF YOU LIKE IT! THANKS!
