@@ -10,7 +10,7 @@
   - **install the SteamClient( START IT ONCE**, no login, no autostart, just install and start it once)
   - go to the Server.cfg (WindowsGSM Click on **Browse => Server Files**, then go **\tf2\cfg** and open **server.cfg** with Editor)
     - Excange "sv_lan" from 1 to 0
-- The Server can not be **connected from the same Machine**. You will need to create the server within Black Mesa game (Multiplayer => create) if one Machine has to act as Server AND Client.
+- The Server can not be **connected from the same Machine**. You will need to create the server ingame (Multiplayer => create) if one Machine has to act as Server AND Client.
 
 ### WindowsGSM Installation: 
 1. Download  WindowsGSM https://windowsgsm.com/ 
