@@ -15,7 +15,7 @@ namespace WindowsGSM.Plugins
             name = "WindowsGSM.TF2_64bit",
             author = "Raziel7893",
             description = "WindowsGSM plugin for supporting TF2 using 64bit Dedicated Server",
-            version = "1.0",
+            version = "1.1",
             url = "https://github.com/Raziel7893/WindowsGSM.TF2_64bit",
             color = "#34FFeb"
         };
