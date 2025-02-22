@@ -21,9 +21,13 @@ namespace WindowsGSM.Plugins
         };
         // - Plugin Details
         public bool AllowsEmbedConsole = true;
-        public int PortIncrements = 1;
+        public int PortIncrements = 0;
         public dynamic QueryMethod = new GameServer.Query.A2S();
         public override bool loginAnonymous => true;
+        // - Game server default values
+        public string Port = "27015";
+        public string QueryPort = "27015";
+        public string Maxplayers = "32";
 
         public string FullName = "Team Fortress 2 64bit Dedicated Server";
         public string Defaultmap { get { return "cp_badlands"; } }
@@ -31,7 +35,7 @@ namespace WindowsGSM.Plugins
         public override string AppId { get { return "232250"; } }
         public string Additional { get { return "-tickrate 64"; } }
 
-        public string StartPath = "srcds_win64.exe";
+        public override string StartPath => "srcds_win64.exe";
 
         public TF2_64bit(Functions.ServerConfig serverData): base(serverData)
         {
@@ -137,11 +141,13 @@ namespace WindowsGSM.Plugins
                 File.WriteAllText(configFile, configText);
             }
         }
-        public bool IsImportValid(string path)
+
+        public new bool IsInstallValid()
         {
-            string importPath = Path.Combine(path, StartPath);
-            Error = $"Invalid Path! Fail to find {Path.GetFileName(StartPath)}";
-            return File.Exists(importPath);
+            string checkPath = StartPath ?? "srcds.exe";    //why null here?
+            string installPath = Functions.ServerPath.GetServersServerFiles(serverData.ServerID, checkPath);
+            Error = $"Fail to find {installPath}";
+            return File.Exists(installPath);
         }
     }
 }
