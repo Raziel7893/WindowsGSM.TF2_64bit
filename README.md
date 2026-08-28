@@ -1,5 +1,5 @@
 # TF2
-🧩 Plugin for WindowsGSM to run a dedicated server for Black Mesa
+🧩 Plugin for WindowsGSM to run a dedicated server for Team Fortress 2
 
 ## PLEASE ⭐STAR⭐ THE REPO IF YOU LIKE IT! THANKS!
 
