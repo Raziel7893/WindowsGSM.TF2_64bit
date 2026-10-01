@@ -30,10 +30,10 @@ Modify the server config file to adjust settings(Brose=>Server Files): serverfil
 🗃️ Didn't find any documentation yet. Please Let me know if you came accros one
 
 ### The Game
-🕹️ https://store.steampowered.com/app/362890/Black_Mesa/
+🕹️ https://store.steampowered.com/app/440/Team_Fortress_2/
 
 ### Dedicated server info
-🖥️ https://steamdb.info/app/346680/info/
+🖥️ https://steamdb.info/app/232250/info/
 
 ### Port Forwarding (YOU NEED THIS, TO BE ABLE TO CONNECT FROM THE INTERNET(only for servers/pcs at home, Hosted Servers work different there, make sure you have a full IPv4 and if your provider needs explicit portforwarding):
 - If You don't know How: Google: YourRouterBrand + Portforwarding
